@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Games', sans-serif;
+}
+h1{
+    font-family: 'Tetris', sans-serif;
+}
+.menu {
+    margin-top: 50px;
+    background-image: url("../image/background_1.jpg");
+    background-size: cover; 
+    display: flex;
+    border: 2px solid #f6f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 800px; 
+    height: 500px;
+    padding: 20px;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.menu-option {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px;
+    transition: border 0.3s, font-size 0.3s;
+}
+
+.menu-option:hover {
+    font-size: 28px;
+}
+
+.menu-title {
+    font-size: 75px;
+    font-weight: bold;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+

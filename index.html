@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Tetris</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleBoard.css" />
+    <link href="https://fonts.cdnfonts.com/css/tetris" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+  </head>
+  <body>
+    <!-- menu -->
+    <div class="menu">
+      <div class="menu-content">
+        <div class="menu-options">
+          <div class="menu-option" id="startButton">Start game</div>
+          <div class="menu-option" id="easyToHard">Easy to hard</div>
+          <div class="menu-option" id="levelButton">Level</div>
+          <div class="menu-option" id="sound">Sound: <span id="onSound" style="font-size: 25px;">ON</span></div>
+          <div class="menu-option" id="music">Music: <span id="onMusic" style="font-size: 25px;">OFF</span></div>
+          <div class="menu-option" id="instructionsButton">Guide play</div>
+          
+        </div>
+      </div>
+      <h1 class="menu-title">Game Tetris</h1>
+    </div>
+
+    <!-- chọn level -->
+    <div id="levelSelector" style="display: none;">
+      <div class="levelContent">
+        <input type="submit" value="<" id="giamButton">
+        <p class="changeLevel" style="font-size: 50px;"><span id="selectLevel">1</span></p>
+        <input type="submit" value=">" id="tangButton">
+      </div>
+      <div id="XacNhanButton">OK</div>
+    </div>
+    <!-- huong dan choi -->
+    <div id="howPlay" style="display: none;">
+      <div class="howImg">
+        <img src="./image/HowToPlay.png" alt="">
+      </div>
+      <div id="XacNhanButton2">OK</div>
+    </div>
+
+    <!-- game -->
+    <div id="game-container" style="display: none;">
+      <div class="game-board">
+        <canvas id="canvas" width="300" height="600"></canvas>
+      </div>
+      <div class="game-info">
+        <div class="info-item">Next shape: </div>
+        <div class="info-item"> 
+          <canvas id="canvasRand" width="120" height="60"></canvas>
+        </div>
+        <div class="info-item">Time: <span id="time">0:00</span></div>
+        <div class="info-item">Playtime: <span id="time2">0:00</span></div>
+        <div class="info-item">Level: <span id="level">1</span></div>
+        <div class="info-item">Score: <span id="score">0</span></div>
+        
+
+          <input class="dungButton" type="submit" value="Stop">
+          <input class="thoatButton" type="submit" value="Exit">
+      </div>
+    </div>
+    
+    <audio id="hoverHover" src="./sound/Ready.wav" preload="auto"></audio>
+    <audio id="moveSound" src="./sound/rotate.wav" preload="auto"></audio>
+    <audio id="rotateSound" src="./sound/move.wav" preload="auto"></audio>
+    <audio id="dropSound" src="./sound/harddrop.wav" preload="auto"></audio>
+    <audio id="removeSound" src="./sound/remove.wav" preload="auto"></audio>
+    <audio id="endSound" src="./sound/EndGame.mp3" preload="auto"></audio>
+    <audio id="musicGame">
+      <source src="./sound/Twister Tetris.mp3" type="audio/mp3">
+    </audio>
+
+
+    <script src="./js/handleSound.js"></script>
+    <script src="./js/imgHowToPlay.js"></script>
+    <script src="./js/randShape.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/Level.js"></script>
+    <script src="./js/BlockAll.js"></script>
+    <script src="./js/Handle.js"></script>
+    <script src="./js/script.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,145 @@
+#game-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 800px;
+}
+
+.game-board{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border: 10px solid #f6f4f4;
+}
+
+.game-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.info-item {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dungButton{
+    font-family: 'Games', sans-serif;
+    background-color: rgb(113, 187, 3);
+    padding: 10px 15px;
+    border: 2px solid #f6f4f4;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.dungButton:hover{
+    background-color: rgb(185, 234, 89);
+}
+.thoatButton{
+    font-family: 'Games', sans-serif;
+    cursor: pointer;
+    background-color: rgb(255, 47, 47);
+    padding: 10px 15px;
+    border: 2px solid #f6f4f4;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.thoatButton:hover{
+    background-color: rgb(235, 131, 131);
+}
+
+/* CSS cho nút "Chọn level" */
+#levelSelector {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  #levelSelector > div {
+    display: flex;
+    align-items: center;
+  }
+  .levelContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #giamButton, #tangButton {
+    cursor: pointer;
+    background-color: #19d900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+  #tangButton:hover, #giamButton:hover {
+    background-color: #8de79a;
+  }
+  
+#selectLevel {
+    margin: 70px;
+  }
+  
+  #XacNhanButton {
+    justify-content: center;
+    cursor: pointer;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: border 0.3s, font-size 0.3s;
+    font-size: 24px;
+  }
+  
+  #XacNhanButton:hover {
+    font-size: 28px;
+    background-color: #5c94c9;
+  }
+  /* CSS cho Img huong dan */
+  #howPlay {
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .howImg {
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+  
+  #XacNhanButton2 {
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(18, 172, 21);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: border 0.3s, font-size 0.3s;
+    font-size: 24px;
+  }
+  
+  #XacNhanButton2:hover {
+    font-size: 28px;
+    background-color: #79f779;
+  }
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
